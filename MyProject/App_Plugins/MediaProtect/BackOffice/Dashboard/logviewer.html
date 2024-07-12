@@ -1,0 +1,65 @@
+﻿<div ng-controller="MediaProtect.Dashboard.LogviewerController" ng-cloak>
+  <mediaprotect-licenseinfo></mediaprotect-licenseinfo>
+  <umb-editor-sub-header>
+    <umb-editor-sub-header-content-right>
+      <umb-editor-sub-header-section>
+        <button type="button" class="btn logViewerButton" ng-click="refresh()"> <span><localize key="mediaprotectLogViewer_refreshButton"></localize></span> </button>
+        <button type="button" class="btn btn-success logViewerButton" ng-click="exportData()"> <span><localize key="mediaprotectLogViewer_exportButton"></localize></span> </button>
+        <button type="button" class="btn btn-danger logViewerButton" ng-click="clearLog()"> <span><localize key="mediaprotectLogViewer_clearButton"></localize></span> </button>
+        <form class="form-search -no-margin-bottom logviewerForm" novalidate>
+          <i class="icon icon-search"></i>
+          <input class="form-control search-input mediaprotectSearch"
+                 type="text"
+                 ng-model="model.searchTerm"
+                 ng-change="filter(model.searchTerm)"
+                 localize="placeholder"
+                 placeholder="@general_typeToSearch"
+                 prevent-enter-submit
+                 no-dirty-check>
+        </form>
+      </umb-editor-sub-header-section>
+    </umb-editor-sub-header-content-right>
+  </umb-editor-sub-header>
+  <div class="umb-table" ng-if="model.hasEntries ===true ">
+    <div class="umb-table-head">
+      <div class="umb-table-row">
+        <div class="umb-table-cell">&nbsp;</div>
+        <div class="umb-table-cell"><localize key="mediaprotectLogViewer_headerFile"></localize></div>
+        <div class="umb-table-cell"><localize key="mediaprotectLogViewer_headerMediaItem"></localize></div>
+        <div class="umb-table-cell"><localize key="mediaprotectLogViewer_headerUserName"></localize></div>
+        <div class="umb-table-cell"><localize key="mediaprotectLogViewer_headerUserIp"></localize></div>
+        <div class="umb-table-cell"><localize key="mediaprotectLogViewer_headerRequestedOn"></localize></div>
+      </div>
+    </div>
+    <div class="umb-table-body">
+      <div class="umb-table-row -solid" ng-repeat="entry in model.logEntries">
+        <div class="umb-table-cell">&nbsp;</div>
+        <div class="umb-table-cell">
+          <a class="umb-table-body__link" href="{{entry.path}}" tar target="_blank" title="{{entry.path}}">{{entry.path}}</a>
+        </div>
+        <div class="umb-table-cell">
+          <a class="umb-table-body__link" href="/umbraco/#/media/media/edit/{{entry.mediaId}}" target="_blank" title="{{entry.mediaName}}">{{entry.mediaName}}</a>
+        </div>
+        <div class="umb-table-cell">{{entry.userName}}</div>
+        <div class="umb-table-cell">{{entry.userIp}}</div>
+        <div class="umb-table-cell">{{entry.formattedDateTime}}</div>
+      </div>
+    </div>
+  </div>
+
+  <umb-empty-state ng-if="model.hasEntries ===false "
+                   position="center">
+    <localize key="mediaprotectLogViewer_noData"></localize>
+  </umb-empty-state>
+
+  <div class="flex justify-center items-center">
+    <umb-pagination ng-if="model.totalPages > 1"
+                    page-number="model.currentPage"
+                    total-pages="model.totalPages"
+                    on-next="gotoPage"
+                    on-prev="gotoPage"
+                    on-go-to-page="gotoPage">
+    </umb-pagination>
+  </div>
+
+</div>

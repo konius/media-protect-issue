@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<language alias="nl" intName="Dutch" localName="Nederlands" lcid="19" culture="nl-NL">
+  <creator>
+    <name>Soeteman software</name>
+    <link>https://github.com/rsoeteman/mediaprotect-resources</link>
+  </creator>
+  <area alias="general">
+    <key alias="mediaprotectTitle">Mediaprotect</key>
+    <key alias="trialMessage">Bedankt voor het installeren van Mediaprotect! Media protect draait in trial mode, wat betekend dat Media protect alleen op localhost werkt.</key>
+    <key alias="configurationError"><![CDATA[Sorry, Media protect is foutief geconfigureerd <br/><br/><a href="https://soetemansoftware.nl/media-protect/documentation" target="_new">Download de handleiding</a> om te zien hoe dit probleem opgelost kan worden, of <a href="mailto:support@soetemansoftware.nl?subject=I have a question about Mediaprotect">mail ons  support team</a>.<br/><br/>Sorry voor het ongemak,<br/><br/>Soeteman Software]]></key>
+  </area>
+  <area alias="dashboardTabs">
+    <key alias="mediaProtectIndexer">Media protect indexer</key>
+    <key alias="mediaProtectLogViewer">Media protect log viewer</key>
+  </area>
+  <area alias="mediaprotectDialog">
+    <key alias="intro"><![CDATA[Choose how to restrict access to the media item <strong>%0%</strong>]]></key>
+    <key alias="removeConfirm"><![CDATA[Are you sure you want to remove the protection from the page <strong>%0%</strong>?]]></key>
+    <key alias="dialogErrorMultiLingualLoginPageSelected">The login page you selected is multilingual. MediaProtect can't determine the locale from the media url directly so select a login page that is not multilingual. </key>
+    <key alias="dialogErrorMultiLingualErrorPageSelected">The error page you selected is multilingual. MediaProtect can't determine the locale from the media url directly so select an error page that is not multilingual. </key>
+    <key alias="dialogErrorMembersRequired">Select at least one member</key>
+    <key alias="dialogErrorRolesRequired">Select at least one role</key>
+    <key alias="dailogErrorLoginRequired">Login page  is required</key>
+    <key alias="dialogErrorNoRightsRequired">No rights page is required</key>
+    <key alias="dialogError">Fout, zie de log voor details.</key>
+    <key alias="dialogSave">Save</key>
+    <key alias="dialogSavedDescription">Saved protection settings for '{0}'</key>
+    <key alias="dialogRemove">Remove</key>
+    <key alias="dialogRemoveDescription">Removed protection settings for '{0}'</key>
+  </area>
+  <area alias="mediaprotectIndexDashboard">
+    <key alias="title">Media protect indexer</key>
+    <key alias="intro">Mediaprotect indexes data, so it can determine really fast if an item is protected or not. This is done automatically when you save or protect a node.</key>
+    <key alias="amountItemsInIndex">Current items in index</key>
+    <key alias="lastUpdateDate">Last index update</key>
+    <key alias="reIndex">Rebuild the mediaprotect index</key>
+    <key alias="reindexStatusHeader">Rebuild index</key>
+    <key alias="reindexStatusDescription">Index is rebuilt</key>
+  </area>
+  <area alias="mediaprotectLogViewer">
+    <key alias="confirmDelete">Weet u zeker dat u alle historie wilt verwijderen?</key>
+    <key alias="refreshButton">Opnieuw laden</key>
+    <key alias="exportButton">Exporteer</key>
+    <key alias="clearButton">Log bestand leegmaken</key>
+    <key alias="headerFile">Bestand</key>
+    <key alias="headerMediaItem">Media item</key>
+    <key alias="headerUserName">Gebruikersnaam</key>
+    <key alias="headerUserIp">Gebruikers IP adres</key>
+    <key alias="headerRequestedOn">Bekeken op</key>
+    <key alias="noData">Geen gegevens gevonden</key>
+  </area>
+</language>

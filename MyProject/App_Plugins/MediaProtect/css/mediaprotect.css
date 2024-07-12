@@ -1,0 +1,35 @@
+﻿.dialogPickerSelected {
+    font-weight: 900;
+}
+
+.dialogLabel {
+    width:25%;
+}
+
+.dialogLink {
+    cursor: pointer;
+}
+
+.dialogPickerDelete {
+    color:red;
+    font-weight: 900;
+}
+
+.logViewerButton {
+    min-width: 50px;
+    margin-right:10px !important;
+}
+
+.logviewerForm {
+    margin-right:10px;
+}
+
+.mediaprotectLicenseInfo a {
+    text-decoration: underline;
+}
+.mediaprotectSearch {
+    margin-bottom: 0px!important;
+}
+.mediaprotecterror {
+    padding: 10px 10px 5px 0px;
+}

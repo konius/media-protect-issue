@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<language alias="en_us" intName="English (US)" localName="English (US)" lcid="" culture="en-US">
+  <creator>
+    <name>Soeteman software</name>
+    <link>https://github.com/rsoeteman/mediaprotect-resources</link>
+  </creator>
+  <area alias="general">
+    <key alias="mediaprotectTitle">Mediaprotect</key>
+    <key alias="trialMessage">Thank you for trying Mediaprotect! You are currently running in trial mode which means Mediaprotect will only work on localhost and automatic. Add a license to the /umbraco/Licenses/ folder, or <a href="http://soetemansoftware.nl/mediaprotect" target="_blank">buy a license</a> today to unlock all the features.</key>
+    <key alias="configurationError"><![CDATA[<h1>Mediaprotect configuration error</h1>We are very sorry, but we found a configuration error in  Mediaprotect <br/><br/>Contact the site owner.<br/><br/>Sorry for the inconvenience.]]></key>
+  </area>
+  <area alias="dashboardTabs">
+    <key alias="mediaProtectIndexer">Media protect indexer</key>
+    <key alias="mediaProtectLogViewer">Media protect log viewer</key>
+  </area>
+  <area alias="mediaprotectDialog">
+    <key alias="intro"><![CDATA[Choose how to restrict access to the media item <strong>%0%</strong>]]></key>
+    <key alias="removeConfirm"><![CDATA[Are you sure you want to remove the protection from the page <strong>%0%</strong>?]]></key>
+    <key alias="dialogErrorMultiLingualLoginPageSelected">The login page you selected is multilingual. MediaProtect can't determine the locale from the media url directly so select a login page that is not multilingual. </key>
+    <key alias="dialogErrorMultiLingualErrorPageSelected">The error page you selected is multilingual. MediaProtect can't determine the locale from the media url directly so select an error page that is not multilingual. </key>
+    <key alias="dialogErrorMembersRequired">Select at least one member</key>
+    <key alias="dialogErrorRolesRequired">Select at least one role</key>
+    <key alias="dailogErrorLoginRequired">Login page  is required</key>
+    <key alias="dialogErrorNoRightsRequired">No rights page is required</key>
+    <key alias="dialogError">Error, see log for details</key>
+    <key alias="dialogSave">Save</key>
+    <key alias="dialogSavedDescription">Saved protection settings for '{0}'</key>
+    <key alias="dialogRemove">Remove</key>
+    <key alias="dialogRemoveDescription">Removed protection settings for '{0}'</key>
+  </area>
+  <area alias="mediaprotectIndexDashboard">
+    <key alias="title">Media protect indexer</key>
+    <key alias="intro">Mediaprotect indexes data, so it can determine really fast if an item is protected or not. This is done automatically when you save or protect a node.</key>
+    <key alias="amountItemsInIndex">Current items in index</key>
+    <key alias="lastUpdateDate">Last index update</key>
+    <key alias="reIndex">Rebuild the mediaprotect index</key>
+    <key alias="reindexStatusHeader">Rebuild index</key>
+    <key alias="reindexStatusDescription">Index is rebuilt</key>
+  </area>
+  <area alias="mediaprotectLogViewer">
+    <key alias="confirmDelete">Are you sure you want to delete all history?</key>
+    <key alias="refreshButton">Refresh</key>
+    <key alias="exportButton">Export</key>
+    <key alias="clearButton">Clear log</key>
+    <key alias="headerFile">File</key>
+    <key alias="headerMediaItem">Media item</key>
+    <key alias="headerUserName">Username</key>
+    <key alias="headerUserIp">User IP</key>
+    <key alias="headerRequestedOn">Requested on</key>
+    <key alias="noData">No log entries found</key>
+  </area>
+</language>
